@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+    background-color: #F1F6F9;
+}
+
+h1 {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+
+p {
+    display: inline;
+    margin: 0 5px 0 5px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+img {
+  width: 60%;
+  transform: scale(1);
+  transition: 0.3s ease-out;
+}
+
+.big-font {
+  font-size: 2rem;
+}
+
+.cell {
+    background-color: #212A3E;
+    color: white;
+    font-size: 3rem;
+    display: inline-block;
+    height: 125px;
+    width: 125px;
+    margin: 2.5px;
+    padding: 20px 0 20px 0;
+    border-radius: 20%;
+    user-select: none;
+    transform: scale(1);
+    transition: 0.3s ease-out;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    transform: scale(1);
+    transition: 0.3s ease-out;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+.pressed {
+    background-color: red;
+}
+
+.disappear {
+  width: 0;
+  height: 0;
+  transform: scale(0);
+}
+
+@media (max-width: 480px ){
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 10%;
+    }
+    .cell{
+      height: 112.5px;
+      width: 112.5px;
+      margin: 1px;
+    }
+    .container {
+        width: 100%;
+    }
+    .img {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1200px){
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 10%;
+    }
+    .cell{
+      height: 125px;
+      width: 125px;
+      margin: 2.5pxpx;
+    }
+    .container {
+        width: 100%;
+    }
+  }
